@@ -16,7 +16,8 @@
   "devDependencies": {
     "@commitlint/cli": "^7.0.0",
     "@commitlint/config-conventional": "^7.0.1",
-    "lerna": "^3.18.4"
+    "lerna": "^3.18.4",
+    "lerna-changelog": "^0.8.3"
   },
   "dependencies": {}
 }
