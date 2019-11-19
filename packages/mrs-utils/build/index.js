@@ -3,7 +3,7 @@
 Object.defineProperty(exports, "__esModule", {
   value: true
 });
-exports.subtract = exports.add = exports.divide = exports.multiply = void 0;
+exports.percent = exports.subtract = exports.add = exports.divide = exports.multiply = void 0;
 
 var multiply = function multiply(firstNumber, secondNumber) {
   return firstNumber * secondNumber;
@@ -28,3 +28,9 @@ var subtract = function subtract(firstNumber, secondNumber) {
 };
 
 exports.subtract = subtract;
+
+var percent = function percent(firstNumber, secondNumber) {
+  return divide(firstNumber, 100) * secondNumber;
+};
+
+exports.percent = percent;

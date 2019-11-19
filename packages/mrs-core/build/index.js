@@ -3,7 +3,7 @@
 Object.defineProperty(exports, "__esModule", {
   value: true
 });
-exports.advanced = exports.asmd = void 0;
+exports.superAdvanced = exports.advanced = exports.asmd = void 0;
 
 var _mrsUtils = require("mrs-utils");
 
@@ -23,3 +23,9 @@ var advanced = function advanced() {
 };
 
 exports.advanced = advanced;
+
+var superAdvanced = function superAdvanced() {
+  return (0, _mrsUtils.percent)(3000, 30);
+};
+
+exports.superAdvanced = superAdvanced;
