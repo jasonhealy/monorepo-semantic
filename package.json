@@ -3,9 +3,7 @@
   "workspaces": [
     "packages/*"
   ],
-  "scripts": {
-    "semantic-release": "lerna-semantic-release pre && lerna-semantic-release post && lerna-semantic-release perform"
-  },
+  "scripts": {},
   "version": "1.0.0",
   "description": "Testing semantic release and lerna",
   "main": "index.js",
@@ -13,8 +11,8 @@
   "license": "MIT",
   "private": true,
   "devDependencies": {
-    "lerna": "^3.18.4",
-    "lerna-semantic-release": "^9.0.1"
+    "@commitlint/cli": "^7.0.0",
+    "@commitlint/config-conventional": "^7.0.1"
   },
   "dependencies": {},
   "release": {
