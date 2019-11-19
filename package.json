@@ -18,14 +18,5 @@
     "@commitlint/config-conventional": "^7.0.1",
     "lerna": "^3.18.4"
   },
-  "dependencies": {},
-  "release": {
-    "branches": [
-      "master",
-      {
-        "name": "alpha",
-        "prerelease": true
-      }
-    ]
-  }
+  "dependencies": {}
 }

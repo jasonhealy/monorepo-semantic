@@ -17,3 +17,7 @@ export const subtract = (firstNumber, secondNumber) => {
 export const percent = (firstNumber, secondNumber) => {
   return divide(firstNumber, 100) * secondNumber;
 };
+
+export const percentage = (firstNumber, secondNumber) => {
+  return divide(firstNumber, 100) * secondNumber;
+};
