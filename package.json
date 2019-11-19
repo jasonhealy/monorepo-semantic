@@ -3,7 +3,10 @@
   "workspaces": [
     "packages/*"
   ],
-  "scripts": {},
+  "scripts": {
+    "build": "lerna run build",
+    "publish": "lerna run publish"
+  },
   "version": "1.0.0",
   "description": "Testing semantic release and lerna",
   "main": "index.js",
@@ -12,7 +15,8 @@
   "private": true,
   "devDependencies": {
     "@commitlint/cli": "^7.0.0",
-    "@commitlint/config-conventional": "^7.0.1"
+    "@commitlint/config-conventional": "^7.0.1",
+    "lerna": "^3.18.4"
   },
   "dependencies": {},
   "release": {
