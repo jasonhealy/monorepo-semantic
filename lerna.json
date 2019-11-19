@@ -1,9 +1,7 @@
 {
-  "packages": [
-    "packages/*"
-  ],
+  "packages": ["packages/*"],
   "command": {
-    "version": {
+    "publish": {
       "allowBranch": "master",
       "conventionalCommits": true,
       "gitRemote": "origin",
