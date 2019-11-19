@@ -1,4 +1,4 @@
-import { multiply, add, subtract, divide } from "mrs-utils";
+import { multiply, add, subtract, divide, percent } from "mrs-utils";
 
 export const asmd = (firstNumber, secondNumber) => {
   return {
@@ -11,4 +11,8 @@ export const asmd = (firstNumber, secondNumber) => {
 
 export const advanced = () => {
   return "Advanced";
+};
+
+export const superAdvanced = () => {
+  return percent(3000, 30);
 };
