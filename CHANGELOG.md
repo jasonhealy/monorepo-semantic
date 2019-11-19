@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [0.1.3](https://github.com/jasonhealy/monorepo-semantic/compare/v0.1.2...v0.1.3) (2019-11-19)
+
+
+### Bug Fixes
+
+* Fixing stuff ([b752c54](https://github.com/jasonhealy/monorepo-semantic/commit/b752c540892c259eee3285fc507fc57f06aeaf00))
+
+
+
+
+
 ## [0.1.2](https://github.com/jasonhealy/monorepo-semantic/compare/v0.1.1...v0.1.2) (2019-11-19)
 
 
