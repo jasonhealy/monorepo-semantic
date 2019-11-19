@@ -3,7 +3,7 @@
 Object.defineProperty(exports, "__esModule", {
   value: true
 });
-exports.asmd = void 0;
+exports.advanced = exports.asmd = void 0;
 
 var _mrsUtils = require("mrs-utils");
 
@@ -17,3 +17,9 @@ var asmd = function asmd(firstNumber, secondNumber) {
 };
 
 exports.asmd = asmd;
+
+var advanced = function advanced() {
+  return "Advanced";
+};
+
+exports.advanced = advanced;

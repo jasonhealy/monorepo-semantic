@@ -8,3 +8,7 @@ export const asmd = (firstNumber, secondNumber) => {
     divide: divide(firstNumber, secondNumber)
   };
 };
+
+export const advanced = () => {
+  return "Advanced";
+};
