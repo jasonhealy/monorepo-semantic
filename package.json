@@ -5,7 +5,7 @@
   ],
   "scripts": {
     "build": "lerna run build",
-    "publish": "lerna run publish"
+    "publish": "lerna publish"
   },
   "version": "1.0.0",
   "description": "Testing semantic release and lerna",
