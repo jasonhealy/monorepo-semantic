@@ -1,6 +1,6 @@
 {
   "name": "mrs-core",
-  "version": "0.1.4",
+  "version": "0.1.5",
   "scripts": {
     "build": "babel src -d src --out-dir build"
   },
@@ -10,6 +10,6 @@
     "@babel/cli": "^7.0.0",
     "@babel/core": "^7.0.0",
     "@babel/preset-env": "^7.7.1",
-    "mrs-utils": "^0.1.4"
+    "mrs-utils": "^0.1.5"
   }
 }
