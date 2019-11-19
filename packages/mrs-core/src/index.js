@@ -16,3 +16,7 @@ export const advanced = () => {
 export const superAdvanced = () => {
   return percent(3000, 30);
 };
+
+export const newFunc = () => {
+  return percent(3000, 30);
+};
