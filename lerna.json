@@ -1,5 +1,7 @@
 {
-  "packages": ["packages/*"],
+  "packages": [
+    "packages/*"
+  ],
   "command": {
     "version": {
       "allowBranch": "master",
@@ -9,7 +11,7 @@
       "message": "chore(release): %s"
     }
   },
-  "version": "0.1.0",
+  "version": "0.1.1",
   "npmClient": "yarn",
   "useWorkspaces": true
 }
