@@ -1,0 +1,17 @@
+{
+  "name": "mrs",
+  "workspaces": [
+    "packages/*"
+  ],
+  "scripts": {},
+  "version": "1.0.0",
+  "description": "Testing semantic release and lerna",
+  "main": "index.js",
+  "author": "Jason Healy",
+  "license": "MIT",
+  "private": true,
+  "devDependencies": {
+    "lerna": "^3.18.4"
+  },
+  "dependencies": {}
+}

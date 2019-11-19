@@ -1,0 +1,14 @@
+{
+  "name": "mrs-utils",
+  "version": "1.0.0",
+  "scripts": {
+    "build": "babel src -d src --out-dir build"
+  },
+  "main": "build/index.js",
+  "license": "MIT",
+  "devDependencies": {
+    "@babel/cli": "^7.0.0",
+    "@babel/core": "^7.0.0",
+    "@babel/preset-env": "^7.7.1"
+  }
+}

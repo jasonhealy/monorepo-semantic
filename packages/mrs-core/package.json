@@ -1,0 +1,15 @@
+{
+  "name": "mrs-core",
+  "version": "1.0.0",
+  "scripts": {
+    "build": "babel src -d src --out-dir build"
+  },
+  "main": "build/index.js",
+  "license": "MIT",
+  "dependencies": {
+    "@babel/cli": "^7.0.0",
+    "@babel/core": "^7.0.0",
+    "@babel/preset-env": "^7.7.1",
+    "mrs-utils": "^1.0.0"
+  }
+}
