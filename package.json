@@ -26,12 +26,6 @@
       "@semantic-release/commit-analyzer",
       "@semantic-release/release-notes-generator",
       "@smartive/semantic-release-lerna",
-      [
-        "@semantic-release/changelog",
-        {
-          "changelogFile": "docs/changelog.md"
-        }
-      ],
       "@semantic-release/npm",
       [
         "@semantic-release/git",
