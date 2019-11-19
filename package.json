@@ -3,7 +3,9 @@
   "workspaces": [
     "packages/*"
   ],
-  "scripts": {},
+  "scripts": {
+    "semantic-release": "lerna-semantic-release pre && lerna-semantic-release post && lerna-semantic-release perform"
+  },
   "version": "1.0.0",
   "description": "Testing semantic release and lerna",
   "main": "index.js",
@@ -12,28 +14,10 @@
   "private": true,
   "devDependencies": {
     "lerna": "^3.18.4",
-    "@commitlint/cli": "^8.2.0",
-    "@commitlint/config-conventional": "^8.2.0",
-    "@semantic-release/git": "^7.0.18",
-    "@smartive/semantic-release-lerna": "^1.0.0",
-    "semantic-release": "^16.0.0-beta.31"
+    "lerna-semantic-release": "^9.0.1"
   },
   "dependencies": {},
   "release": {
-    "prepare": false,
-    "ci": false,
-    "plugins": [
-      "@semantic-release/commit-analyzer",
-      "@semantic-release/release-notes-generator",
-      "@smartive/semantic-release-lerna",
-      "@semantic-release/npm",
-      [
-        "@semantic-release/git",
-        {
-          "message": "chore(release): New version ${nextRelease.version} \n\n${nextRelease.notes} [skip ci]"
-        }
-      ]
-    ],
     "branches": [
       "master",
       {
