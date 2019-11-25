@@ -1,0 +1,51 @@
+version: 2
+aliases:
+  - &restore-cache
+    keys:
+      - v1-dependencies-{{ .Branch }}-{{ checksum "package.json" }}
+      - v1-dependencies-{{ .Branch }}
+
+  - &save-node-cache
+    key: v1-dependencies-{{ .Branch }}-{{ checksum "package.json" }}
+    paths:
+      - node_modules
+
+  - &install-node-dependencies
+    name: Install node dependencies
+    command: yarn install --frozen-lockfile
+
+  - &bootstrap-packages
+    name: Bootstrap packages
+    command: yarn bootstrap
+
+  - &build-packages
+    name: Build packages
+    command: yarn build
+
+defaults: &defaults
+  working_directory: ~/daf
+
+jobs:
+  publish-packages-npm:
+    <<: *defaults
+    docker:
+      - image: node:10
+    steps:
+      - checkout
+      - restore_cache: *restore-cache
+      - run: *install-node-dependencies
+      - run: *bootstrap-packages
+      - run: *build-packages
+      - run:
+          name: Authenticate with NPM
+          command: echo "//registry.npmjs.org/:_authToken=$NPM_TOKEN" > ~/daf/.npmrc
+      - run:
+          name: Validate npm authentication
+          command: npm whoami
+
+workflows:
+  version: 2
+
+  verify-test-build:
+    jobs:
+      - publish-packages-npm
