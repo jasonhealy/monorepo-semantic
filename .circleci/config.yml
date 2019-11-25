@@ -23,7 +23,7 @@ aliases:
     command: yarn build
 
 defaults: &defaults
-  working_directory: ~/daf
+  working_directory: ~/repo
 
 jobs:
   publish-packages-npm:
@@ -38,7 +38,7 @@ jobs:
       - run: *build-packages
       - run:
           name: Authenticate with NPM
-          command: echo "//registry.npmjs.org/:_authToken=$NPM_TOKEN" > ~/daf/.npmrc
+          command: echo "//registry.npmjs.org/:_authToken=$NPM_TOKEN" > ~/repo/.npmrc
       - run:
           name: Validate npm authentication
           command: npm whoami
